@@ -1,5 +1,5 @@
 # pip install inflect
-import inflect
+import inflect # We need this to convert numbers to words
 
 '''
 This application is written with lists in mind, so it can be easily expanded to take more than three integers.
@@ -28,18 +28,19 @@ Sets where one item is equal to the average:
 # Global variables
 p = inflect.engine() # Create an inflect engine so we can convert cardinal numbers to ordinal words
 secret_code: int = 1979 # The secret code is 1979, which is the year I was born and a dope song by Smashing Pumpkins
+total_ints: int = 3 # Number of integers we'll be comparing
 
 # Let's tell the user how this works
 def introduction() -> None:
     print("This is what the program does:")
-    print("1. Takes three integers as input")
-    print("2. Calculates the average of the three integers")
+    print(f"1. Takes {p.number_to_words(total_ints)} integers as input")
+    print(f"2. Calculates the average of the {p.number_to_words(total_ints)} integers")
     print("3. Compares each integer to the average")
     print("4. Counts the number of integers that are equal to the average")
 
 # Here we take in a list of floats and return the average as a float
 def find_average(numbers: list[float]) -> float:
-    return round(sum(numbers)/len(numbers), 3)
+    return round(sum(numbers)/len(numbers), total_ints)
 
 # Take a list of floats and the average as a float and compare each float to the average
 def compare_to_average(numbers: list[float], average: float) -> None:
@@ -69,14 +70,16 @@ def read_int_value(n: int) -> int:
 def main():
     introduction()
 
-    total_ints: int = 3 # User should enter an int, but we use float so average is a float
     ints_to_check: list[int] = [] # We'll store the integers the user enters here
-    num_tests: int = 0 # We'll keep track of how many tests the user has run
+    num_tests: int = 0 # We'll keep track of how many tests the user hasgit run
     avg_string: str = "" # We'll use this to print the integers the user entered
     should_exit = False # We need this because we'll be in a loop in another loop
 
     # If the user hasn't found the secret code after 100 tests, they're not going to
     while num_tests < 100:
+
+        # For clarity
+        print(f"\n\n")
 
         # Clear previous input
         ints_to_check.clear()

@@ -33,6 +33,4 @@ python3 part2.py <<EOF
 14
 7
 1979
-0
-0
 EOF
