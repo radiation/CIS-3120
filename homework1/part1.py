@@ -1,3 +1,4 @@
+from enum import Enum
 import requests
 from bs4 import BeautifulSoup
 
@@ -6,21 +7,36 @@ name_width: int = 25
 height_width: int = 5
 line_break: str = '-'*(name_width+height_width)
 
+# Enum for sports to prevent data entry errors
+class Sport(Enum):
+    SWIMMING = 'Swimming'
+    VOLLEYBALL = 'Volleyball'
+
+# Enum for genders
+class Gender(Enum):
+    MALE = 'M'
+    FEMALE = 'F'
+
+# Enum for schools
+class School(Enum):
+    BARUCH = 'Baruch College'
+
+
 # Use a class for Athletes in case we want to compare other attributes in the future
 class Athlete:
     def __init__(self, name, gender, sport, height, school):
         self.name: str = name
-        self.gender: str = gender
-        self.sport: str = sport
+        self.gender: Gender = gender
+        self.sport: Sport = sport
         self.height: float = height
-        self.school: str = school
+        self.school: School = school
     
     def __str__(self):
         return f'{self.name}: {self.gender} {self.sport} @ {self.school}'
 
 
 # Use a class for SportsSource to encapsulate the data
-class SportsSource:
+class SportsProgram:
     def __init__(self, url, school, gender, sport):
         self.url = url
         self.school = school
@@ -58,23 +74,23 @@ class SportsSource:
 
 # Main function
 def main():
-    school_programs: list[SportsSource] = [
-        SportsSource('https://athletics.baruch.cuny.edu/sports/mens-swimming-and-diving/roster?view=2',
-                        'Baruch College',
-                        'M',
-                        'Swimming'),
-        SportsSource('https://athletics.baruch.cuny.edu/sports/mens-volleyball/roster?view=2',
-                        'Baruch College',
-                        'M',
-                        'Volleyball'),
-        SportsSource('https://athletics.baruch.cuny.edu/sports/womens-swimming-and-diving/roster?view=2',
-                        'Baruch College',
-                        'F',
-                        'Swimming'),
-        SportsSource('https://athletics.baruch.cuny.edu/sports/womens-volleyball/roster?view=2',
-                        'Baruch College',
-                        'F',
-                        'Volleyball')
+    school_programs: list[SportsProgram] = [
+        SportsProgram('https://athletics.baruch.cuny.edu/sports/mens-swimming-and-diving/roster?view=2',
+                        School('Baruch College'),
+                        Gender('M'),
+                        Sport('Swimming')),
+        SportsProgram('https://athletics.baruch.cuny.edu/sports/mens-volleyball/roster?view=2',
+                        School('Baruch College'),
+                        Gender('M'),
+                        Sport('Volleyball')),
+        SportsProgram('https://athletics.baruch.cuny.edu/sports/womens-swimming-and-diving/roster?view=2',
+                        School('Baruch College'),
+                        Gender('F'),
+                        Sport('Swimming')),
+        SportsProgram('https://athletics.baruch.cuny.edu/sports/womens-volleyball/roster?view=2',
+                        School('Baruch College'),
+                        Gender('F'),
+                        Sport('Volleyball')),
     ]
 
     # Iterate through each program and print the average height

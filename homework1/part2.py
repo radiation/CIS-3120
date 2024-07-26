@@ -16,12 +16,15 @@ Sets where no value is equal to the average:
     3,7,11 (Average: 7, none of the values is 7)
     5,10,15 (Average: 10, none of the values is 10)
 
-Sets where one item is equal to the average:
+Sets where one value is equal to the average:
     3,3,6 (Average: 4, one value is 4)
     8,4,4 (Average: 5.33, one value is 4)
     12,6,6 (Average: 8, one value is 6)
     2,1,3 (Average: 2, one value is 2)
     7,14,7 (Average: 9.33, one value is 7)
+
+Sets where two values are equal to the average:
+    IMPOSSIBLE!
 
 '''
 
