@@ -1,0 +1,590 @@
+Gender,Sport,School,Name,Height
+M,Volleyball,City College of New York,Brandon  Green,72
+M,Volleyball,City College of New York,Reng  Chen,69
+M,Volleyball,City College of New York,Edwin Fierros Gaytan,68
+M,Volleyball,City College of New York,Anirudha Das,68
+M,Volleyball,City College of New York,Prabodh KC,71
+M,Volleyball,City College of New York,Christ Noel,72
+M,Volleyball,City College of New York,Ricky  Li,72
+M,Volleyball,City College of New York,David Reyes Galvez,67
+M,Volleyball,City College of New York,Antonio Oliveira-Nurse,75
+M,Volleyball,City College of New York,Alex Abraham,73
+M,Volleyball,City College of New York,Cristian  Canela,72
+M,Volleyball,City College of New York,Kyrylo Vysotskyy,72
+M,Volleyball,Lehman College,Ray Rodriguez,67
+M,Volleyball,Lehman College,Joseph Gianfranco Teves,65
+M,Volleyball,Lehman College,Chris  Mata,63
+M,Volleyball,Lehman College,Emmanuel Oladosu,70
+M,Volleyball,Lehman College,Jimmy Evans,67
+M,Volleyball,Lehman College,Alain Abreu Esteva,72
+M,Volleyball,Lehman College,Neithan Pilay,70
+M,Volleyball,Lehman College,Christian Agudo,67
+M,Volleyball,Lehman College,Andrew Figueroa,71
+M,Volleyball,Lehman College,Almir Pepic,74
+M,Volleyball,Brooklyn College,Aaron Siu,72
+M,Volleyball,Brooklyn College,Aziz Abdusamiev,75
+M,Volleyball,Brooklyn College,Kevin Seise,68
+M,Volleyball,Brooklyn College,Ali Zandani,66
+M,Volleyball,Brooklyn College,Wai  Lin,65
+M,Volleyball,Brooklyn College,Dion  Csikortos,65
+M,Volleyball,Brooklyn College,Omar Shawki,69
+M,Volleyball,Brooklyn College,Tylar Pina,0
+M,Volleyball,Brooklyn College,David Lema,68
+M,Volleyball,Brooklyn College,Giorgi Tchincharauli,75
+M,Volleyball,Brooklyn College,Armand  Kaloshi,76
+M,Volleyball,Brooklyn College,Jason Lin,77
+M,Volleyball,Brooklyn College,Tommy Min,69
+M,Volleyball,Brooklyn College,Yinuo Zhang,74
+M,Volleyball,Brooklyn College,Eddie Lu,75
+M,Volleyball,Brooklyn College,Jiaian  Flanders,70
+M,Volleyball,Brooklyn College,Jaden  McBryde,73
+M,Volleyball,John Jay College,Stephen Daly,69
+M,Volleyball,John Jay College,Micah Rossman,68
+M,Volleyball,John Jay College,Maxwell Law,69
+M,Volleyball,John Jay College,Benjamin Chen,66
+M,Volleyball,John Jay College,Sebastian Rodriguez,68
+M,Volleyball,John Jay College,Christian Perea,73
+M,Volleyball,John Jay College,Matthew Vong,69
+M,Volleyball,John Jay College,Evan Wandersee,68
+M,Volleyball,John Jay College,Logan Ramos,70
+M,Volleyball,John Jay College,Daniel Gonzalez Verdejo,68
+M,Volleyball,John Jay College,Jaden Lamarre,75
+M,Volleyball,John Jay College,Jeferson Avila-Macancela,72
+M,Volleyball,John Jay College,Akashdeep Singh,76
+M,Volleyball,John Jay College,Alex Bridgelall,72
+M,Volleyball,John Jay College,Kensley Jean Gilles,74
+M,Volleyball,John Jay College,Kyle Barriffe-Johnson,79
+M,Volleyball,John Jay College,Steven Ajazi,76
+M,Volleyball,Baruch College,Wen Cheung,69
+M,Volleyball,Baruch College,Ari Osmanaj,75
+M,Volleyball,Baruch College,Jackson  Newcomb,73
+M,Volleyball,Baruch College,Aleksandr  Howard,76
+M,Volleyball,Baruch College,Jack Centeno,73
+M,Volleyball,Baruch College,Kairos Liang,71
+M,Volleyball,Baruch College,Peter Gavroff,76
+M,Volleyball,Baruch College,Zachary Yao,72
+M,Volleyball,Baruch College,Ryan Oommen,69
+M,Volleyball,Baruch College,Juancarlos  Henriquez,72
+M,Volleyball,Baruch College,Naoki Tani,67
+M,Volleyball,Baruch College,Gorton Law,70
+M,Volleyball,Baruch College,David Tang,69
+M,Volleyball,Baruch College,Haoxin Hu,77
+M,Volleyball,Baruch College,Argjend Osmanaj,74
+M,Volleyball,Baruch College,Davidson Claros,73
+M,Volleyball,Medgar Evers College,Carlos Abreu,68
+M,Volleyball,Medgar Evers College,Cody Ramsey,71
+M,Volleyball,Medgar Evers College,Adrian Budhu,74
+M,Volleyball,Medgar Evers College,Jerome Hodges,73
+M,Volleyball,Medgar Evers College,Louis Caiola,72
+M,Volleyball,Medgar Evers College,Isaac Akindipe,74
+M,Volleyball,Medgar Evers College,Patrick Mateo,66
+M,Volleyball,Medgar Evers College,Kayshaun Higgs,66
+M,Volleyball,Medgar Evers College,Kadeem Hagley,75
+M,Volleyball,Hunter College,Sergio Aguado,70
+M,Volleyball,Hunter College,Brandon Yeh,67
+M,Volleyball,Hunter College,Nick Yao,69
+M,Volleyball,Hunter College,Ted Kim,72
+M,Volleyball,Hunter College,Cooper Moran,73
+M,Volleyball,Hunter College,Kyle Foley,75
+M,Volleyball,Hunter College,Jimmy Chang,74
+M,Volleyball,Hunter College,Andrew Estiverne,72
+M,Volleyball,Hunter College,Lucas George,77
+M,Volleyball,Hunter College,Jon Domingo,72
+M,Volleyball,Hunter College,Austin White,75
+M,Volleyball,Hunter College,Admir Cekic,72
+M,Volleyball,Hunter College,Annes Deljanin,79
+M,Volleyball,Hunter College,Muhammad Al-Amine Mbaye,74
+M,Volleyball,Hunter College,Demetri Gournelos,73
+M,Volleyball,Hunter College,Jon Pflueger,78
+M,Volleyball,Hunter College,Onyeka Onaga,75
+M,Volleyball,Hunter College,Matisse Lee-Maarek,78
+M,Volleyball,York College,Ahmed Algendy,73
+M,Volleyball,York College,Glenver Stuart,73
+M,Volleyball,York College,Vincent Agokei,75
+M,Volleyball,York College,Austinson Cooke,77
+M,Volleyball,York College,Marvin Mondesir,70
+M,Volleyball,York College,Alexis Ramirez,68
+M,Volleyball,York College,George Molina,72
+M,Volleyball,York College,Stanley  Sanchez,68
+M,Volleyball,York College,Brian Pintos,70
+M,Volleyball,York College,"David Heyliger, Jr.",73
+M,Volleyball,Ball State,Cameron Gray,72
+M,Volleyball,Ball State,Nathan Goh,76
+M,Volleyball,Ball State,Keau Thompson,76
+M,Volleyball,Ball State,Xander Pink,67
+M,Volleyball,Ball State,Mason Connor,73
+M,Volleyball,Ball State,Griffin Satterfield,79
+M,Volleyball,Ball State,Trevor Phillips,78
+M,Volleyball,Ball State,Vanis Buckholz,78
+M,Volleyball,Ball State,Lucas Machado,78
+M,Volleyball,Ball State,Rodney Wallace,78
+M,Volleyball,Ball State,Lukas Pytlak,74
+M,Volleyball,Ball State,Ryan Bartz,77
+M,Volleyball,Ball State,Eyal Rawitz,78
+M,Volleyball,Ball State,Dyer Ball,78
+M,Volleyball,Ball State,Marty Canavan,77
+M,Volleyball,Ball State,Wil McPhillips,76
+M,Volleyball,Ball State,Aaron Hernandez,75
+M,Volleyball,Ball State,Tinaishe Ndavazocheva,78
+M,Volleyball,Ball State,Braydon Savitski-Lynde,79
+M,Volleyball,Ball State,Patrick Rogers,79
+M,Volleyball,Ball State,Will  Patterson,82
+M,Volleyball,Ball State,Mateusz Karpow,81
+M,Volleyball,Ball State,Peter  Zurawski,78
+W,Volleyball,BMCC,Crystal Saw,64
+W,Volleyball,BMCC,Yisneily Morales,61
+W,Volleyball,BMCC,Sarah Sellami,68
+W,Volleyball,BMCC,Marie Claire Hurtado,0
+W,Volleyball,BMCC,Garyana Altidor,61
+W,Volleyball,BMCC,Julianna Carrasco,68
+W,Volleyball,BMCC,Cheyenne Gray-Taitt,64
+W,Volleyball,BMCC,Andrea Richino,68
+W,Volleyball,BMCC,Teonnie Blake,63
+W,Volleyball,BMCC,Kamya Hayes,64
+W,Volleyball,BMCC,Keyanna Irving,67
+W,Volleyball,BMCC,Silvia Chen,69
+W,Volleyball,York College,Jalena Baker,65
+W,Volleyball,York College,Cherub Autar,66
+W,Volleyball,York College,Jachimma Onwuamaegbu,72
+W,Volleyball,York College,Kai-Marie Sammy,70
+W,Volleyball,York College,Shamonie Miller,62
+W,Volleyball,York College,Jasmine  Vega,61
+W,Volleyball,York College,Samantha Panameno,65
+W,Volleyball,York College,Andrea  Wright,68
+W,Volleyball,York College,Madison Plaza,67
+W,Volleyball,York College,Lissenny Florentino,66
+W,Volleyball,York College,Nadaysia Nivar,67
+W,Volleyball,York College,Alicia Gumbs,65
+W,Volleyball,York College,Devina  Luckhoo,63
+W,Volleyball,York College,Tyler Dazey,67
+W,Volleyball,Hostos CC,Samara Correa,60
+W,Volleyball,Hostos CC,Genesis Sigaran,62
+W,Volleyball,Hostos CC,Jeliver Jimenez,65
+W,Volleyball,Hostos CC,Mariali Sosa,64
+W,Volleyball,Hostos CC,Natalie Mora,64
+W,Volleyball,Hostos CC,Nicole Rodriguez,70
+W,Volleyball,Hostos CC,Nyla  Rivera,63
+W,Volleyball,Hostos CC,Sahara Ramos,64
+W,Volleyball,Hostos CC,Rashel Torres,61
+W,Volleyball,Hostos CC,Marisabel Pujols,64
+W,Volleyball,Hostos CC,Justine Pomales,63
+W,Volleyball,Hostos CC,Virginia Carrasco,67
+W,Volleyball,Hostos CC,Nicole  Rosas,64
+W,Volleyball,Hostos CC,Brianna Rodriguez,62
+W,Volleyball,Bronx CC,Maynee De Los Santos,64
+W,Volleyball,Bronx CC,Emely Nunez,66
+W,Volleyball,Bronx CC,Kiana Castillo,70
+W,Volleyball,Bronx CC,Breanna Kimbrough,69
+W,Volleyball,Bronx CC,Zouera Sofiani,65
+W,Volleyball,Bronx CC,Nicole Santos,66
+W,Volleyball,Bronx CC,Aichata Kone,70
+W,Volleyball,Bronx CC,Nayely Rodriguez,66
+W,Volleyball,Bronx CC,Nahara Lopez,66
+W,Volleyball,Queens College,Despina Boudouris,65
+W,Volleyball,Queens College,Alexis Deodat,70
+W,Volleyball,Queens College,Anjeline Arnakis,71
+W,Volleyball,Queens College,Christina Franco,69
+W,Volleyball,Queens College,Elena Leung,68
+W,Volleyball,Queens College,Alicia Cervera,71
+W,Volleyball,Queens College,Lindsay Osterhoudt,73
+W,Volleyball,Queens College,Elizabeth Cerullo,68
+W,Volleyball,Queens College,Jayna Marie Lorenzo,68
+W,Volleyball,Queens College,Kendall Conrad,71
+W,Volleyball,Queens College,Sarah Munn,63
+W,Volleyball,Queens College,Isabella Anzalone,68
+W,Volleyball,Augusta College,Marah  Zenner,65
+W,Volleyball,Augusta College,Rylie Harris,65
+W,Volleyball,Augusta College,Sophia Kruczko,75
+W,Volleyball,Augusta College,Lauren Posa,73
+W,Volleyball,Augusta College,Abigail LeVines,71
+W,Volleyball,Augusta College,Mikayla  Kline,70
+W,Volleyball,Augusta College,Jada Suguturaga,73
+W,Volleyball,Augusta College,Madelyn Eden,74
+W,Volleyball,Augusta College,Janvier Buggs,66
+W,Volleyball,Augusta College,Marin Freeland,74
+W,Volleyball,Augusta College,Libby Nickels,61
+W,Volleyball,Augusta College,Guilia Rodrigues,63
+W,Volleyball,Augusta College,Mia Saavedra,70
+W,Volleyball,Augusta College,Jacklyn Simms,72
+W,Volleyball,Augusta College,Layne Witherspoon,70
+W,Volleyball,Flagler College,Amelia Fitzpatrick,69
+W,Volleyball,Flagler College,Lexi Basler,64
+W,Volleyball,Flagler College,Ella Wicker,65
+W,Volleyball,Flagler College,Marley Middlebrooks,70
+W,Volleyball,Flagler College,Brooke Singleton,64
+W,Volleyball,Flagler College,Meredith Dixon,73
+W,Volleyball,Flagler College,Colby Stempkowski,72
+W,Volleyball,Flagler College,Bennett Daniels,71
+W,Volleyball,Flagler College,Briged Potter,70
+W,Volleyball,Flagler College,Shaelin Bilbo,66
+W,Volleyball,Flagler College,Jordan Norwood,70
+W,Volleyball,Flagler College,Molly Boyd,75
+W,Volleyball,Flagler College,Jordan Berglin,70
+W,Volleyball,Flagler College,Clare Sheedy,72
+W,Volleyball,Flagler College,Cecilia Robert,67
+W,Volleyball,Flagler College,Maeson Peterson,73
+W,Volleyball,Flagler College,Lainee Mack,68
+W,Volleyball,Flagler College,Cassidy Bloom,69
+W,Volleyball,Flagler College,Gracie Fleming,71
+W,Volleyball,USC Aiken,Ana Cate Loftus,70
+W,Volleyball,USC Aiken,Madison Fox,67
+W,Volleyball,USC Aiken,Gyöngyvér  Araczki,70
+W,Volleyball,USC Aiken,Anna Sommer,73
+W,Volleyball,USC Aiken,Sadie McKay,69
+W,Volleyball,USC Aiken,Sidney Hogan,67
+W,Volleyball,USC Aiken,Kaitlyn  Rodriguez,70
+W,Volleyball,USC Aiken,Avery Pearson,74
+W,Volleyball,USC Aiken,Tucker Patterson,70
+W,Volleyball,USC Aiken,Tabor Scanlon,66
+W,Volleyball,USC Aiken,Chloe Duzenack,71
+W,Volleyball,USC Aiken,Lexi Rogers,69
+W,Volleyball,USC Aiken,Alli Bishop,72
+W,Volleyball,USC Aiken,Emily Lammers,69
+W,Volleyball,USC Aiken,Izabella De Lima,61
+W,Volleyball,Penn State - Lock Haven,Olivia Cook,68
+W,Volleyball,Penn State - Lock Haven,Kaitlyn Houck,63
+W,Volleyball,Penn State - Lock Haven,Kelly Gaston,68
+W,Volleyball,Penn State - Lock Haven,Avery Nicholson,65
+W,Volleyball,Penn State - Lock Haven,Natalie Acevedo,68
+W,Volleyball,Penn State - Lock Haven,Salma Villa  Morales,62
+W,Volleyball,Penn State - Lock Haven,Reagan  Irons,69
+W,Volleyball,Penn State - Lock Haven,Avery Beall,69
+W,Volleyball,Penn State - Lock Haven,Madison Eckley,65
+W,Volleyball,Penn State - Lock Haven,Emma Kelly,69
+W,Volleyball,Penn State - Lock Haven,Evie Jane Rembold,71
+W,Volleyball,Penn State - Lock Haven,Gracelynn Wolzen,71
+W,Volleyball,Penn State - Lock Haven,Maggie Rafferty,67
+W,Volleyball,Penn State - Lock Haven,Gabby Gealey,71
+W,Volleyball,Penn State - Lock Haven,Claire Pavick,68
+W,Volleyball,Penn State - Lock Haven,Erin Ferello,65
+W,Volleyball,Penn State - Lock Haven,Alyssa Daley,75
+W,Volleyball,Penn State - Lock Haven,Myka Costanzo,64
+W,Volleyball,Penn State - Lock Haven,Kyleigh McDermit,71
+W,Volleyball,Penn State - Lock Haven,Katrina Cowder,71
+M,Swimming,College of Staten Island,Anthony Attenborough,70
+M,Swimming,College of Staten Island,James Curran,69
+M,Swimming,College of Staten Island,Charles Cusumano,64
+M,Swimming,College of Staten Island,David Fayngersh,70
+M,Swimming,College of Staten Island,Michael Graham,70
+M,Swimming,College of Staten Island,Eslam Hussein,67
+M,Swimming,College of Staten Island,Maxim Kleyer,70
+M,Swimming,College of Staten Island,William Kwan,68
+M,Swimming,College of Staten Island,Julian Lopez,68
+M,Swimming,College of Staten Island,Dylan Martinson,73
+M,Swimming,College of Staten Island,Hassan Matar,70
+M,Swimming,College of Staten Island,David Poggioli,73
+M,Swimming,College of Staten Island,Elliot Radov,73
+M,Swimming,College of Staten Island,Josiah Rivera,68
+M,Swimming,College of Staten Island,Sam Rozenfeld,67
+M,Swimming,College of Staten Island,Nicholas Tartaglione,72
+M,Swimming,York College,Ahmed Algendy,73
+M,Swimming,York College,Aanas Aybakar,72
+M,Swimming,York College,George Molina,72
+M,Swimming,York College,Wood-by Paulemont,69
+M,Swimming,York College,Richard Reyes,66
+M,Swimming,York College,Jeremy Sapeg,70
+M,Swimming,York College,Alex Winter,72
+M,Swimming,Brooklyn College,Aziz Abdusamiev,0
+M,Swimming,Brooklyn College,Ryan Badre-Hume,75
+M,Swimming,Brooklyn College,Max Bratkovsky,72
+M,Swimming,Brooklyn College,Aaron Brijbukhan,0
+M,Swimming,Brooklyn College,Zurab Chkhartishvili,0
+M,Swimming,Brooklyn College,Carlos Garcia-Nunez,0
+M,Swimming,Brooklyn College,Daniel Kalinin,0
+M,Swimming,Brooklyn College,Michael Kravets,0
+M,Swimming,Brooklyn College,Nicholai Krylyuk,0
+M,Swimming,Brooklyn College,Ian Lichaniu,0
+M,Swimming,Brooklyn College,Allen Mardakhayev,0
+M,Swimming,Brooklyn College,Joseph Scarpetta,65
+M,Swimming,Brooklyn College,Mujibar Shaad,0
+M,Swimming,Brooklyn College,Isaac Zambrano,74
+M,Swimming,Lindenwood University,Ryan Boeding,74
+M,Swimming,Lindenwood University,Noah Boyd,68
+M,Swimming,Lindenwood University,Jaxon Bradburn,0
+M,Swimming,Lindenwood University,Johan Cue Carrillo,73
+M,Swimming,Lindenwood University,Trevor Danner,73
+M,Swimming,Lindenwood University,Ondrej Dusa,0
+M,Swimming,Lindenwood University,Mattia Giurgevich,76
+M,Swimming,Lindenwood University,Lance Godard,0
+M,Swimming,Lindenwood University,Eric Hansson,72
+M,Swimming,Lindenwood University,Tait Harvey,73
+M,Swimming,Lindenwood University,Nicholas Heye,71
+M,Swimming,Lindenwood University,Elliott Irwin,74
+M,Swimming,Lindenwood University,Piotr Kowalczyk,0
+M,Swimming,Lindenwood University,Bennet Loving,0
+M,Swimming,Lindenwood University,Matheo Mateos-Mongelos,73
+M,Swimming,Lindenwood University,David Molina-Fregenal,70
+M,Swimming,Lindenwood University,Jake Noble,70
+M,Swimming,Lindenwood University,Jose Ochoa,69
+M,Swimming,Lindenwood University,Gavin Schulte,73
+M,Swimming,Lindenwood University,Adam Szczerba,76
+M,Swimming,Lindenwood University,Polat Tasbasi,0
+M,Swimming,Lindenwood University,Max Wetteland,0
+M,Swimming,Lindenwood University,Nick Williams,0
+M,Swimming,Lindenwood University,Patryk Winiatowski,72
+M,Swimming,Mckendree University,Caden Brooks,73
+M,Swimming,Mckendree University,Kirk Brotherton,72
+M,Swimming,Mckendree University,Owen Brubaker,75
+M,Swimming,Mckendree University,DaVante Carey,72
+M,Swimming,Mckendree University,Chance Conde,73
+M,Swimming,Mckendree University,Patrick Cramer,74
+M,Swimming,Mckendree University,Samuel Davey,71
+M,Swimming,Mckendree University,Christian Davidson,68
+M,Swimming,Mckendree University,Mason Enthoven,67
+M,Swimming,Mckendree University,Miles Fleischer,63
+M,Swimming,Mckendree University,Leo Gandaria-Hernandez,72
+M,Swimming,Mckendree University,Kadence Griffin,70
+M,Swimming,Mckendree University,Colton Grimes,79
+M,Swimming,Mckendree University,Abram Hagedorn,73
+M,Swimming,Mckendree University,Ethan Hanson,75
+M,Swimming,Mckendree University,Come Jaegle,72
+M,Swimming,Mckendree University,Nick Khatkovyy,68
+M,Swimming,Mckendree University,Wyatt Kurtz,65
+M,Swimming,Mckendree University,Caleb Law,72
+M,Swimming,Mckendree University,Jackson Lustig,73
+M,Swimming,Mckendree University,Neill Mauss,73
+M,Swimming,Mckendree University,Xander McWhorter,71
+M,Swimming,Mckendree University,Spencer Meyers,73
+M,Swimming,Mckendree University,Archie  Minto,71
+M,Swimming,Mckendree University,Finn Moseley,72
+M,Swimming,Mckendree University,Joey Ovanic,72
+M,Swimming,Mckendree University,Filipe Pinheiro,73
+M,Swimming,Mckendree University,Nathan Pollard,74
+M,Swimming,Mckendree University,Patryk Rozenek,75
+M,Swimming,Mckendree University,Arthur Souza,69
+M,Swimming,Mckendree University,Matthew Stooke,76
+M,Swimming,Mckendree University,Michael Stooke,72
+M,Swimming,Mckendree University,Noah Tague,74
+M,Swimming,Mckendree University,Mario Perez Torrado,71
+M,Swimming,Mckendree University,Preston Troyer,72
+M,Swimming,Mckendree University,Tyson Upton,79
+M,Swimming,Mckendree University,Alireza Yavari,70
+M,Swimming,Ramapo College,Alessandro Alvarez,69
+M,Swimming,Ramapo College,Giovanni Alvarez,69
+M,Swimming,Ramapo College,Caleb Baron,68
+M,Swimming,Ramapo College,Thomas Breen,74
+M,Swimming,Ramapo College,Tyler Canteen,66
+M,Swimming,Ramapo College,Samuel De Leon,65
+M,Swimming,Ramapo College,Ryan Gallacher,73
+M,Swimming,Ramapo College,Benjamin Gomez,73
+M,Swimming,Ramapo College,AJ Guevara,66
+M,Swimming,Ramapo College,Jack Hill,75
+M,Swimming,Ramapo College,Brendan McDevitt,72
+M,Swimming,Ramapo College,Tyler Moore,74
+M,Swimming,Ramapo College,Joe Swede,75
+M,Swimming,Ramapo College,Josh Yee,72
+M,Swimming,Ramapo College,Ian Ziomek,69
+M,Swimming,SUNY Oneota,David Butler,69
+M,Swimming,SUNY Oneota,Ross Caimano,70
+M,Swimming,SUNY Oneota,Ethan Cairo,69
+M,Swimming,SUNY Oneota,Joseph  Campise,73
+M,Swimming,SUNY Oneota,Andrew Capella,69
+M,Swimming,SUNY Oneota,Matt Cleveland,68
+M,Swimming,SUNY Oneota,Eli Cohen,73
+M,Swimming,SUNY Oneota,Mason DeLisio,71
+M,Swimming,SUNY Oneota,Anthony Genovese,72
+M,Swimming,SUNY Oneota,Brendan Heaney,71
+M,Swimming,SUNY Oneota,James  Llewellyn,66
+M,Swimming,SUNY Oneota,Cosmo Martinelli,74
+M,Swimming,SUNY Oneota,Logan Oathout,72
+M,Swimming,SUNY Oneota,Lukas Oathout,73
+M,Swimming,SUNY Oneota,Daniel Oh,68
+M,Swimming,SUNY Oneota,Colin Ringwood,69
+M,Swimming,SUNY Oneota,David Scott,70
+M,Swimming,SUNY Oneota,Jonathan  Stanzione,72
+M,Swimming,SUNY Oneota,Gavin Weseman,75
+M,Swimming,SUNY Binghamton,Benjamin Beldner,73
+M,Swimming,SUNY Binghamton,Brandon Berger,73
+M,Swimming,SUNY Binghamton,Ryan Board,71
+M,Swimming,SUNY Binghamton,Keegan Chatham,70
+M,Swimming,SUNY Binghamton,Zachary Ciriaco,66
+M,Swimming,SUNY Binghamton,Ryan Cohn,70
+M,Swimming,SUNY Binghamton,Nathan DeGuzman,69
+M,Swimming,SUNY Binghamton,Christopher Egan,66
+M,Swimming,SUNY Binghamton,Christopher Ghim,72
+M,Swimming,SUNY Binghamton,Brian Harding,76
+M,Swimming,SUNY Binghamton,Jackson Homan,72
+M,Swimming,SUNY Binghamton,Sandon Karinsky,70
+M,Swimming,SUNY Binghamton,George Kipshidze,73
+M,Swimming,SUNY Binghamton,Eric Kroon,77
+M,Swimming,SUNY Binghamton,Elijah Lanfear,74
+M,Swimming,SUNY Binghamton,Xiaoyu Lin,73
+M,Swimming,SUNY Binghamton,Ryan Maierle,75
+M,Swimming,SUNY Binghamton,William Maurer,70
+M,Swimming,SUNY Binghamton,Justin Meyn,74
+M,Swimming,SUNY Binghamton,Liam Murphy,73
+M,Swimming,SUNY Binghamton,Oisin O'Sullivan,71
+M,Swimming,SUNY Binghamton,Matthew Palguta,74
+M,Swimming,SUNY Binghamton,Travis Phillips,73
+M,Swimming,SUNY Binghamton,Robert Reining,74
+M,Swimming,SUNY Binghamton,Henry Shemet,75
+M,Swimming,SUNY Binghamton,Jake  Vecchio,68
+M,Swimming,Albright College,Matthew Czubachowski,72
+M,Swimming,Albright College,Nicholas Dolan,73
+M,Swimming,Albright College,Caleb Ferns,72
+M,Swimming,Albright College,Nicholas Griffith,76
+M,Swimming,Albright College,Joseph Guiliano,72
+M,Swimming,Albright College,Kieran Hassard,72
+M,Swimming,Albright College,Anthony Laite,69
+M,Swimming,Albright College,Drew MacDonald,72
+M,Swimming,Albright College,Kyle Morken,73
+M,Swimming,Albright College,Peter Vanderwerf,75
+W,Swimming,College of Staten Island,Aurelia Barbagallo,63
+W,Swimming,College of Staten Island,Jacqueline DeFranco,65
+W,Swimming,College of Staten Island,Katherine Ebrahim,69
+W,Swimming,College of Staten Island,Jessica Johnson,68
+W,Swimming,College of Staten Island,Brooke Manning,66
+W,Swimming,College of Staten Island,Edna Melendez,69
+W,Swimming,College of Staten Island,Morgan Novello,65
+W,Swimming,College of Staten Island,Kolleen Rodriguez,62
+W,Swimming,College of Staten Island,Deanna Soueid,62
+W,Swimming,College of Staten Island,Jordan Swanson,67
+W,Swimming,College of Staten Island,Katarina Tsirlin,64
+W,Swimming,College of Staten Island,Asmea Youssef,67
+W,Swimming,Queens College,Rupakshi Aggarwal,0
+W,Swimming,Queens College,Asha Besaw,61
+W,Swimming,Queens College,Rory Chea,64
+W,Swimming,Queens College,Claudia Cimino,0
+W,Swimming,Queens College,Laura Cruz Rosario,63
+W,Swimming,Queens College,Natalia Cuttler,66
+W,Swimming,Queens College,Jillian Etnel,63
+W,Swimming,Queens College,Kristen Flores,61
+W,Swimming,Queens College,Alexis Hall,68
+W,Swimming,Queens College,Bianca Hiltz,69
+W,Swimming,Queens College,Fatima Morrobel,62
+W,Swimming,Queens College,Melanie Rodriguez,59
+W,Swimming,York College,Nakia Usher,58
+W,Swimming,York College,Julia Wyman,58
+W,Swimming,Baruch College,Ethan Abramov,73
+W,Swimming,Baruch College,Youssef  Elkhouly,75
+W,Swimming,Baruch College,Ramiel Fayngersh,71
+W,Swimming,Baruch College,Peter Gavroff,76
+W,Swimming,Baruch College,Eric Goldshteyn,68
+W,Swimming,Baruch College,Michael Guzman,70
+W,Swimming,Baruch College,Duncan Huie,69
+W,Swimming,Baruch College,Jordan Lin,69
+W,Swimming,Baruch College,Bennett Maczka,76
+W,Swimming,Baruch College,Eli Meron,72
+W,Swimming,Baruch College,Vyacheslav Palyura,69
+W,Swimming,Baruch College,Sami Rahman,70
+W,Swimming,Baruch College,Luca Shapiro,69
+W,Swimming,Baruch College,Gregory Terentyev,67
+W,Swimming,Baruch College,Valentyn Titarenko,71
+W,Swimming,Baruch College,Leonardo Valdivia,68
+W,Swimming,Baruch College,Daniel Vasilkoff,71
+W,Swimming,Baruch College,Daniel Yadgarov,72
+W,Swimming,Baruch College,Samuel Yakubov,68
+W,Swimming,Brooklyn College,Christine  Bailey,0
+W,Swimming,Brooklyn College,Elizabeth Bailey,0
+W,Swimming,Brooklyn College,Gurveen Dhallu,0
+W,Swimming,Brooklyn College,Ayatallah Elkotby,0
+W,Swimming,Brooklyn College,Hebatallah Elkotby,72
+W,Swimming,Brooklyn College,Erin  Forrest,0
+W,Swimming,Brooklyn College,Sydney Gdanski,0
+W,Swimming,Brooklyn College,Julie  Huang,0
+W,Swimming,Brooklyn College,Hailey Johnston,0
+W,Swimming,Brooklyn College,Anastasia Kutuzov,0
+W,Swimming,Brooklyn College,Diana Plasencia,0
+W,Swimming,Brooklyn College,Diana Rezk,68
+W,Swimming,Brooklyn College,Veronika Tsiko,0
+W,Swimming,Lindenwood University,Evi Blennert,0
+W,Swimming,Lindenwood University,Kayla Bulseco,0
+W,Swimming,Lindenwood University,Kornelia Buszka,71
+W,Swimming,Lindenwood University,Kathryn Chaves,0
+W,Swimming,Lindenwood University,Selena Corona,0
+W,Swimming,Lindenwood University,Laney Fenton,66
+W,Swimming,Lindenwood University,Morgen Frausto,69
+W,Swimming,Lindenwood University,Megan Hollaar,69
+W,Swimming,Lindenwood University,Ellie Lopez,67
+W,Swimming,Lindenwood University,Adi Luker,70
+W,Swimming,Lindenwood University,Maddie Lynch,0
+W,Swimming,Lindenwood University,Stephanie Marks,70
+W,Swimming,Lindenwood University,Adison Marshall,69
+W,Swimming,Lindenwood University,Beata Maruszczyk,63
+W,Swimming,Lindenwood University,Joselle Mensah,69
+W,Swimming,Lindenwood University,Karissa Metzger,67
+W,Swimming,Lindenwood University,Marlene Pape,68
+W,Swimming,Lindenwood University,Maja Piotrowicz,73
+W,Swimming,Lindenwood University,Lucy Price,0
+W,Swimming,Lindenwood University,Ashley Richard,64
+W,Swimming,Lindenwood University,Nina Tasic,67
+W,Swimming,Lindenwood University,Bayley Thompson,65
+W,Swimming,Lindenwood University,Linsey Watson,68
+W,Swimming,Lindenwood University,Calahan Williams,0
+W,Swimming,Lindenwood University,Saylor Wilson,66
+W,Swimming,Lindenwood University,Lyssa Wood,69
+W,Swimming,Mckendree University,Aurora Abbruscato,66
+W,Swimming,Mckendree University,Ana Cecilia Carvalho,64
+W,Swimming,Mckendree University,Terrah DeLorimiere,63
+W,Swimming,Mckendree University,McKenzie Fazio,75
+W,Swimming,Mckendree University,Chiara Fuerst,67
+W,Swimming,Mckendree University,Olivia Fuller,68
+W,Swimming,Mckendree University,Atzi Gomez,63
+W,Swimming,Mckendree University,Sarah Gormley,66
+W,Swimming,Mckendree University,Presley Heitzmann,71
+W,Swimming,Mckendree University,Alexis Kachkin,69
+W,Swimming,Mckendree University,Natalia Kralova,67
+W,Swimming,Mckendree University,Helena  Kurtz,64
+W,Swimming,Mckendree University,Ellie  Lawrence,67
+W,Swimming,Mckendree University,Victoria Maki,70
+W,Swimming,Mckendree University,Andrea  Menard Cordoba,64
+W,Swimming,Mckendree University,Keianna Moss,68
+W,Swimming,Mckendree University,Gabriela Novais Lima,70
+W,Swimming,Mckendree University,Rylee Sitton,67
+W,Swimming,Mckendree University,Caitlyn Sligh,68
+W,Swimming,Mckendree University,Karley Sonnenberg,70
+W,Swimming,Mckendree University,Logan Wilson,65
+W,Swimming,Mckendree University,Jocelyn Zgola,70
+W,Swimming,Ramapo College,Fifi  Amanuel,64
+W,Swimming,Ramapo College,Julia Caramagna,62
+W,Swimming,Ramapo College,Meghan Cortez-Fields,68
+W,Swimming,Ramapo College,Keila Fane,62
+W,Swimming,Ramapo College,Maddy Joe,62
+W,Swimming,Ramapo College,Grace Korey,70
+W,Swimming,Ramapo College,Camila Mercado,61
+W,Swimming,Ramapo College,Valeria Pages,61
+W,Swimming,Ramapo College,Alazne Sudupe,65
+W,Swimming,Ramapo College,Magdalen Swat,62
+W,Swimming,Ramapo College,Rachel Vazquez,65
+W,Swimming,Ramapo College,Cami Yovich,62
+W,Swimming,Kean University,Krisztina Balogh,66
+W,Swimming,Kean University,Emma Bellars,65
+W,Swimming,Kean University,Abby Burns,65
+W,Swimming,Kean University,Amanda Davis,68
+W,Swimming,Kean University,Isabel DeSanno,67
+W,Swimming,Kean University,Alisa Dovbnya,68
+W,Swimming,Kean University,Grace Geyer,71
+W,Swimming,Kean University,Taylor Jacobson,61
+W,Swimming,Kean University,Ashley Konz,68
+W,Swimming,Kean University,Emma Lindecke,66
+W,Swimming,Kean University,Abbie Masters,63
+W,Swimming,Kean University,Naomee  Miller,65
+W,Swimming,Kean University,Teagan Powell,69
+W,Swimming,Kean University,Diana Quiroz,65
+W,Swimming,Kean University,Vivian Ravines,69
+W,Swimming,Kean University,Brianna Shaw,69
+W,Swimming,Kean University,Sydney Stemley,66
+W,Swimming,Kean University,Kylie Tininenko,62
+W,Swimming,SUNY Oneota,Claire Armstrong,65
+W,Swimming,SUNY Oneota,Alexandria Bard,66
+W,Swimming,SUNY Oneota,Madeline Boyer,65
+W,Swimming,SUNY Oneota,Ashley Brousseau,69
+W,Swimming,SUNY Oneota,Denise Coby,66
+W,Swimming,SUNY Oneota,Cadence  Dudley,62
+W,Swimming,SUNY Oneota,Emma Grefski,0
+W,Swimming,SUNY Oneota,Anna Guzzo,64
+W,Swimming,SUNY Oneota,Macayla Hodkinson,66
+W,Swimming,SUNY Oneota,Alison Jorolemon,69
+W,Swimming,SUNY Oneota,Emily Kendrick,64
+W,Swimming,SUNY Oneota,Allison LaBarbera,66
+W,Swimming,SUNY Oneota,Alaska Lilliock,66
+W,Swimming,SUNY Oneota,Anna McCall,66
+W,Swimming,SUNY Oneota,Lena Nakken,69
+W,Swimming,SUNY Oneota,Margaret Nolan,67
+W,Swimming,SUNY Oneota,Sophia Olson,62
+W,Swimming,SUNY Oneota,Jessica Shaw,64
+W,Swimming,SUNY Oneota,Paige Splendido,65
+W,Swimming,SUNY Oneota,Emma Stephenson,67
+W,Swimming,SUNY Oneota,Callie Stinson,64
+W,Swimming,SUNY Oneota,Alyssa Thompson,67
+W,Swimming,SUNY Oneota,Raina Willie,69
