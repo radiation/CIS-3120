@@ -1,5 +1,5 @@
 # pip install inflect
-import inflect # We need this to convert numbers to words
+import inflect  # We need this to convert numbers to words
 
 '''
 This application is written with lists in mind, so it can be easily expanded to take more than three integers.
