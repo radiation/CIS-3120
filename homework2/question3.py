@@ -1,7 +1,16 @@
-import calendar
+import calendar # For converting month number to month name
+import inflect # Bonus: For converting cardinal numbers to ordinal numbers
+from datetime import datetime # Bonus: For converting the last 100 years to four-digit years
+
+# Create an inflect engine
+p = inflect.engine()
+
+# Get current year outside of a function so we don't have to call it every time
+# Divide by 100 to get the last two digits of the year
+current_year: int = datetime.now().year % 100
 
 def read_original_date() -> str:
-    date: str = input("Enter the date in the format MM/DD/YY: ")
+    date: str = input("Enter the date in the format MM/DD/YY or \"q\" to quit: ")
     return date
 
 def break_date(date: str) -> list:
@@ -14,23 +23,36 @@ def print_date_three_ways(date_parts: list):
     day: str = date_parts[1]
     year: str = date_parts[2]
     print(f"European format: {day}-{month}-{year}")
-    print(f"American format: {calendar.month_name[month]}/{day}, {get_four_digit_year(year)}")
-    print(f"Full format: {month}-{0 if day.length==1 else ""}{day}-{year}")
-    print(f"ISO format: {get_four_digit_year(year)}-{month}-{day}")
+    print(f"American format: {calendar.month_name[int(month)]} {p.ordinal(day)}, {get_four_digit_year(year)}")
 
+    # Pad with zeroes if necessary
+    month = month.zfill(2)
+    day = day.zfill(2)
+    print(f"Full format: {month}-{day}-{year.zfill(2)}")
+
+    # Bonus: ISO8601 format, which is objectively the best because it can be alphabetized
+    print(f"ISO8601 format: {get_four_digit_year(year)}-{month}-{day}")
+
+# 
 def get_four_digit_year(two_digit_year):
-    if 0 <= two_digit_year <= 49:
+    two_digit_year: int = int(two_digit_year)
+    if two_digit_year <= current_year:
         return 2000 + two_digit_year
-    elif 50 <= two_digit_year <= 99:
+    elif two_digit_year <= 99:
         return 1900 + two_digit_year
     else:
         raise ValueError("Year must be a two-digit number (00-99).")
 
 def main():
     counter: int = 0
-    while date != "quit" and counter <= 10:
+    date: str = ""
+    while counter <= 10:
         counter += 1
         date: str = read_original_date()
+        if date.lower() == "q":
+            break
         date_parts: list = break_date(date)
         print_date_three_ways(date_parts)
 
+if __name__ == "__main__":
+    main()

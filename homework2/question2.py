@@ -1,33 +1,36 @@
-import random
-import requests
+import os, random, requests
 import pandas as pd
 
-def get_comic(num: int = None) -> dict:
-    url = f"https://xkcd.com/{num}/info.0.json" if (num or num == 1) \
-        else "https://xkcd.com/info.0.json"
-    response = requests.get(url)
-    response.raise_for_status()
-    comic = response.json()
-    return comic
+API_KEY = os.getenv('WEATHER_API_KEY')
+
+# Take city as a string and return a weather row as a dictionary
+def get_weather_for_city(city: str) -> dict:
+    url = f"https://api.weatherapi.com/v1/current.json?q={city}&key={API_KEY}"
+    try:
+        current_weather: dict = requests.get(url).json()['current']
+        return {
+            'city': city,
+            'temp_f': current_weather['temp_f'],
+            'feels_like': current_weather['feelslike_f'], # Can't calc in DF but still nice to see
+            'condition': current_weather['condition']['text'],
+            'wind_mph': current_weather['wind_mph'],
+            'humidity': current_weather['humidity'],
+            'uv': current_weather['uv']
+        }
+    except KeyError:
+        print(f"Error fetching weather data for {city}.")
+        return None
 
 def main():
-    comic: dict = get_comic()
-    print(f"{comic['num']} comics so far!")
+    cities: list = ['New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix', 
+                    'Philadelphia', 'San Antonio', 'San Diego', 'Dallas', 'San Jose']
+    # If you happen to put in Xi'an, China or something, it'll break so we need to filter out the None values
+    weather_data: list = [city_data for city in cities if (city_data := get_weather_for_city(city)) is not None]
 
-    # Generate 10 random numbers between 1 and current comic number
-    comic_num = comic['num']
-    random_comic_nums = random.sample(range(1, comic_num + 1), 10)
-
-    # Initialize an empty list to store comic data
-    comic_data = []
-
-    # Get 10 random comics
-    for i in random_comic_nums:
-        comic_data.append(get_comic(i))
-
-    # Drop the transcript column and save the data to a CSV file
-    df = pd.DataFrame(comic_data).drop(columns=['transcript'])
-    df.to_csv('random_comics.csv', index=False)
+    # Print DF & write to CSV
+    df = pd.DataFrame(weather_data)
+    print(df.describe().round(2))
+    df.to_csv('city_weather.csv', index=False)
 
 if __name__ == "__main__":
     main()
