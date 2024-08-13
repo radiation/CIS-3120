@@ -1,0 +1,11 @@
+city,temp_f,feels_like,condition,wind_mph,humidity,uv
+New York,75.6,76.9,Sunny,6.9,42,6.0
+Los Angeles,73.9,77.2,Sunny,2.5,65,6.0
+Chicago,71.2,71.2,Sunny,5.1,57,6.0
+Houston,87.1,95.2,Patchy rain nearby,4.0,67,7.0
+Phoenix,90.7,94.2,Sunny,6.3,44,8.0
+Philadelphia,75.1,76.6,Sunny,5.6,49,6.0
+San Antonio,83.1,89.4,Cloudy,7.2,75,6.0
+San Diego,72.5,76.6,Sunny,2.9,79,6.0
+Dallas,85.4,89.7,Sunny,9.4,61,7.0
+San Jose,60.3,60.3,Sunny,2.2,84,4.0

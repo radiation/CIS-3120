@@ -1,4 +1,4 @@
-import os, random, requests
+import os, requests
 import pandas as pd
 
 API_KEY = os.getenv('WEATHER_API_KEY')

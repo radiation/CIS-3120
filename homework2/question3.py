@@ -33,8 +33,8 @@ def print_date_three_ways(date_parts: list):
     # Bonus: ISO8601 format, which is objectively the best because it can be alphabetized
     print(f"ISO8601 format: {get_four_digit_year(year)}-{month}-{day}")
 
-# 
-def get_four_digit_year(two_digit_year):
+# Convert a two-digit year to a four-digit year
+def get_four_digit_year(two_digit_year: str) -> int:
     two_digit_year: int = int(two_digit_year)
     if two_digit_year <= current_year:
         return 2000 + two_digit_year
