@@ -1,4 +1,6 @@
+inflect
 pandas
+selenium
 black
 ruff
 isort
