@@ -14,8 +14,7 @@ def home(request):
     return render(request, 'home.html')
 
 def classification(request):
-    prediction = None
-    confidence = None
+    results = []
 
     if request.method == 'POST':
         form = SymptomForm(request.POST)
@@ -38,11 +37,14 @@ def classification(request):
                 symptoms[0] == 'None' and  # Systemic illness is 'None'
                 not any(symptoms[1:])      # All boolean fields are False
             )
-            
+
             if all_negative:
                 # If all symptoms are negative, assume the prediction is negative
-                prediction = "Negative"
-                confidence = "High (Based on no symptoms)"
+                results.append({
+                    'model': 'No Symptoms Detected',
+                    'prediction': 'Negative',
+                    'confidence': 'High (Based on no symptoms)'
+                })
             else:
                 # Map systemic illness to one-hot encoding
                 illness_mapping = {
@@ -57,28 +59,24 @@ def classification(request):
                 # Load all models
                 model_names = ['naive_bayes', 'decision_tree', 'random_forest', 'svm', 'knn']
                 models = {name: load_model(name) for name in model_names}
+                print(models)
 
                 # Get predictions from all models
-                results = predict_single_point(models, symptoms_encoded)
+                for model_name, model in models.items():
+                    prediction = model.predict([symptoms_encoded])[0]
+                    confidence = model.predict_proba([symptoms_encoded]).max() if hasattr(model, 'predict_proba') else "N/A"
 
-                # Find the prediction with the highest confidence
-                highest_confidence_model = max(results, key=lambda model: results[model][1])
-                prediction, confidence = results[highest_confidence_model]
-                model_name = highest_confidence_model
+                    results.append({
+                        'model': model_name.replace('_', ' ').title(),
+                        'prediction': "Positive" if prediction == 1.0 else "Negative",
+                        'confidence': f"{confidence:.2f}" if isinstance(confidence, float) else confidence
+                    })
 
-                # Hilariously, passing a 0.0 kills the prediction block in the template
-                prediction = "Positive" if prediction == 1.0 else "Negative"
+            return render(request, 'classification.html', {
+                'form': form,
+                'results': results,
+            })
 
-                # Print to debug
-                print(f"Prediction: {prediction}, Confidence: {confidence}")
-
-                # Render the result
-                return render(request, 'classification.html', {
-                    'form': form,
-                    'prediction': prediction,
-                    'confidence': confidence,
-                    'model_name': model_name,
-                })
         else:
             # Print form errors to debug why validation failed
             print(form.errors)
@@ -86,7 +84,12 @@ def classification(request):
     else:
         form = SymptomForm()
 
-    return render(request, 'classification.html', {'form': form})
+    return render(request, 'classification.html', {
+        'form': form,
+        'prediction': prediction,
+        'confidence': confidence,
+        'model_name': model_name,
+    })
 
 def regression(request):
     # Load the dataset

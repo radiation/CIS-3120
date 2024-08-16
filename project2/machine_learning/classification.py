@@ -107,7 +107,7 @@ def generate_metrics_graph(models, X_test_scaled, y_test):
 
     # Rotate the tick labels for better readability
     plt.xticks(rotation=45)
-    plt.savefig('../static/class_metrics.png')
+    plt.savefig('../static/class_model_performance_comparison.png')
 
 def load_model(model_name):
     # Construct the full path to the model file
@@ -142,6 +142,8 @@ def predict_single_point(models, symptoms):
     return predictions
 
 def main():
+    image_base_path = '../static/'
+
     # Ask the user if they want to build new models
     build_models = input("Do you want to build new models? (yes/no): ").strip().lower()
 
@@ -234,7 +236,7 @@ def main():
         plt.bar(model_names, mean_scores, yerr=std_dev, capsize=5, color='skyblue')
         plt.ylabel('Mean CV Accuracy')
         plt.title('5-Fold Cross-Validation Accuracy by Model')
-        plt.savefig('images/plot.png')
+        plt.savefig(f'{image_base_path}/class_{name.lower().replace(" ", "_")}_cv_accuracy.png')
     else:
         # Load the models from the pickle files
         for name in models.keys():
@@ -271,10 +273,12 @@ def main():
             [0, 0, 0, 1, True, True, True, True, True, True, True, True]
         ]
 
-        for i, case in enumerate(test_cases):
-            prediction = model.predict([case])[0]
-            confidence = model.predict_proba([case]).max()
-            print(f"Prediction {i}: {True if prediction else False}, Confidence: {round(int(confidence),2)}")
+    for i, case in enumerate(test_cases):
+        prediction = model.predict([case])[0]
+        # Directly use the probability without converting to int, and format it
+        confidence = model.predict_proba([case]).max()
+        print(f"Prediction {i}: {True if prediction else False}, Confidence: {confidence:.2f}")
+
 
     for name, model in models.items():
         if hasattr(model, 'feature_importances_'):

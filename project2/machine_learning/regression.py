@@ -13,9 +13,12 @@ from sklearn.svm import SVR
 def generate_images(df): 
     image_base_path = '../static/'
 
+    # Drop non-numeric columns for the correlation matrix
+    df_numeric = df.drop(columns=['Pop', 'sex'])
+
     # Figure 1: Correlation Matrix
     plt.figure(figsize=(10, 8))
-    sns.heatmap(df.corr(), annot=True, cmap='coolwarm')
+    sns.heatmap(df_numeric.corr(), annot=True, cmap='coolwarm')
     plt.title('Correlation Matrix')
     plt.savefig(f'{image_base_path}/regr_correlation_matrix.png')  # Save the figure
 
@@ -36,6 +39,7 @@ def generate_images(df):
     sns.histplot(df['hdlngth'], bins=20, kde=True)
     plt.title('Distribution of Head Length')
     plt.savefig(f'{image_base_path}/regr_hdlngth_distribution.png')
+
 
 
 # Define a list of models to evaluate
@@ -143,3 +147,5 @@ print(f"R-squared: {best_model_results['R-squared']:.2f}")
 print(f"Mean Absolute Error: {best_model_results['MAE']:.2f}")
 print(f"Mean Squared Error: {best_model_results['MSE']:.2f}")
 print(f"Root Mean Squared Error: {best_model_results['RMSE']:.2f}")
+
+generate_images(df_cleaned)

@@ -25,12 +25,27 @@
 <body>
     <h1>Monkeypox Prediction</h1>
 
-    {% if prediction %}
+    {% if results %}
         <div class="result">
-            <h2>Prediction Result:</h2>
-            <p><strong>Prediction:</strong> {{ prediction }}</p>
-            <p><strong>Confidence:</strong> {{ confidence|floatformat:2 }}</p>
-            <p><strong>Model:</strong> {{ model_name }}</p>
+            <h2>Prediction Results:</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Model</th>
+                        <th>Prediction</th>
+                        <th>Confidence</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for result in results %}
+                        <tr>
+                            <td>{{ result.model }}</td>
+                            <td>{{ result.prediction }}</td>
+                            <td>{{ result.confidence }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
         </div>
     {% endif %}
 
