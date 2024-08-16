@@ -143,3 +143,9 @@ def regression(request):
             })
     else:
         form = PossumPredictionForm()
+
+    # Always return an HttpResponse, even if the method is GET or the form is not valid
+    return render(request, 'regression.html', {
+        'form': form,
+        'sample_data': sample_data,
+    })
