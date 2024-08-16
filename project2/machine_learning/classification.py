@@ -21,7 +21,8 @@ from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
 
 
-def generate_correlation_heatmap(df):
+def generate_images(df):
+    image_base_path = '../static/'
     # Apparently dataframes are passed by reference
     df_copy = df.copy()
 
@@ -38,10 +39,8 @@ def generate_correlation_heatmap(df):
     plt.figure(figsize=(10, 8))
     sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', fmt=".2f")
     plt.title('Correlation Matrix of Symptoms and MonkeyPox Result')
-    plt.savefig('images/correlation_heatmap.png')
+    plt.savefig(f'{image_base_path}/class_correlation_heatmap.png')
 
-
-def generate_count_plots(df):
     fig, axes = plt.subplots(3, 3, figsize=(15, 12)) # Adjust the layout size based on the number of symptoms
     bool_cols = [col for col in df.columns if df[col].dropna().isin([True, False]).all()]
     fig.suptitle('Symptoms Count Based on MonkeyPox Result', fontsize=16)
@@ -52,10 +51,8 @@ def generate_count_plots(df):
         axes[row, col_index].set_xlabel('')
         axes[row, col_index].set_ylabel('Count')
     plt.tight_layout(rect=[0, 0, 1, 0.95])
-    plt.savefig('images/count_plots.png')
+    plt.savefig(f'{image_base_path}/class_count_plots.png')
 
-def generate_bar_chart(df):
-# Setting the aesthetic style of the plots
     sns.set(style="whitegrid")
 
     # Bar Chart for the frequency of monkeypox cases
@@ -64,7 +61,7 @@ def generate_bar_chart(df):
     ax.set_title('Frequency of Monkeypox Cases')
     ax.set_xlabel('MonkeyPox Result')
     ax.set_ylabel('Count')
-    plt.savefig('images/bar_chart.png')
+    plt.savefig(f'{image_base_path}/class_bar_chart.png')
 
 def generate_metrics_graph(models, X_test_scaled, y_test):
     # Metrics to collect
@@ -110,7 +107,7 @@ def generate_metrics_graph(models, X_test_scaled, y_test):
 
     # Rotate the tick labels for better readability
     plt.xticks(rotation=45)
-    plt.savefig('images/metrics.png')
+    plt.savefig('../static/class_metrics.png')
 
 def load_model(model_name):
     # Construct the full path to the model file
@@ -144,47 +141,15 @@ def predict_single_point(models, symptoms):
     print(predictions.items)
     return predictions
 
-def collect_user_input():
-    systemic_illness = input("Enter systemic illness (e.g., None, Fever, Muscle Aches and Pain, Swollen Lymph Nodes): ")
-    sore_throat = input("Sore Throat (yes/no): ").lower() == 'yes'
-    rectal_pain = input("Rectal Pain (yes/no): ").lower() == 'yes'
-    penile_oedema = input("Penile Oedema (yes/no): ").lower() == 'yes'
-    oral_lesions = input("Oral Lesions (yes/no): ").lower() == 'yes'
-    solitary_lesion = input("Solitary Lesion (yes/no): ").lower() == 'yes'
-    swollen_tonsils = input("Swollen Tonsils (yes/no): ").lower() == 'yes'
-    hiv_infection = input("HIV Infection (yes/no): ").lower() == 'yes'
-    sti = input("Sexually Transmitted Infection (yes/no): ").lower() == 'yes'
-
-    # Map systemic illness to one-hot encoding
-    illness_mapping = {
-        'None': [1, 0, 0, 0],
-        'Fever': [0, 1, 0, 0],
-        'Muscle Aches and Pain': [0, 0, 1, 0],
-        'Swollen Lymph Nodes': [0, 0, 0, 1]
-    }
-    illness_encoded = illness_mapping.get(systemic_illness, [1, 0, 0, 0])  # Default to 'None'
-
-    # Combine all inputs into a single list to match model input (12 features total)
-    symptoms = illness_encoded + [
-        rectal_pain, sore_throat, penile_oedema, oral_lesions, solitary_lesion,
-        swollen_tonsils, hiv_infection, sti
-    ]
-    
-    print(f"User Symptoms({len(symptoms)}):", symptoms)
-    return symptoms
-
-
 def main():
     # Ask the user if they want to build new models
     build_models = input("Do you want to build new models? (yes/no): ").strip().lower()
 
     # Read a CSV into a DataFrame
-    df = pd.read_csv('../data/monkeypox.csv')
+    df = pd.read_csv('../static/monkeypox.csv')
 
     # Generate a few visualizations (correlation matrix, bar graph, stacked bar chart)
-    generate_bar_chart(df)
-    generate_correlation_heatmap(df)
-    generate_count_plots(df)
+    generate_images(df)
 
     # Define X (features) and y (target)
     systemic_illness_dummies = pd.get_dummies(df['Systemic Illness'], prefix='Illness')
@@ -237,7 +202,7 @@ def main():
     }
 
     # Directory to save/load models
-    save_directory = '../data/'
+    save_directory = 'data/'
 
     if build_models == 'yes':
         # Apply SMOTE to balance the classes
@@ -281,6 +246,7 @@ def main():
     predictions = {}
     classification_reports = {}
     accuracies = {}
+
     for name, model in models.items():
         # Making predictions
         y_pred = model.predict(X_test_scaled)
@@ -292,24 +258,23 @@ def main():
         
         # Collecting accuracy
         accuracies[name] = accuracy_score(y_test, y_pred)
-        print(f"{name} Accuracy: {accuracies[name]:.2f}")
+        print(f"\n{name} Accuracy: {accuracies[name]:.2f}")
 
         test_cases = [
             # All symptoms are False, should ideally be Negative
             [1, 0, 0, 0, False, False, False, False, False, False, False, False],
             
-            # Some symptoms are True, expect Positive
+            # Some symptoms are True, expect either Positive or Negative
             [0, 1, 0, 0, True, True, True, False, False, False, False, False],
             
             # All symptoms are True, expect Positive
             [0, 0, 0, 1, True, True, True, True, True, True, True, True]
         ]
 
-        for case in test_cases:
-            print(f"Input: {case}")
+        for i, case in enumerate(test_cases):
             prediction = model.predict([case])[0]
             confidence = model.predict_proba([case]).max()
-            print(f"Prediction: {prediction}, Confidence: {confidence}")
+            print(f"Prediction {i}: {True if prediction else False}, Confidence: {round(int(confidence),2)}")
 
     for name, model in models.items():
         if hasattr(model, 'feature_importances_'):
@@ -324,20 +289,6 @@ def main():
     plt.savefig('images/accuracy.png')
 
     generate_metrics_graph(models, X_test_scaled, y_test)
-
-    # Collect user input
-    user_symptoms = collect_user_input()
-
-    # Predict using all models
-    results = predict_single_point(models, user_symptoms)
-
-    # Display the results
-    for model_name, (prediction, confidence) in results.items():
-        if confidence is not None:
-            print(f"{model_name} predicts: {prediction} with confidence {confidence:.2f}")
-        else:
-            print(f"{model_name} predicts: {prediction} (no confidence available)")
-
 
 if __name__ == "__main__":
     main()

@@ -10,6 +10,34 @@ from sklearn.model_selection import GridSearchCV, train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVR
 
+def generate_images(df): 
+    image_base_path = '../static/'
+
+    # Figure 1: Correlation Matrix
+    plt.figure(figsize=(10, 8))
+    sns.heatmap(df.corr(), annot=True, cmap='coolwarm')
+    plt.title('Correlation Matrix')
+    plt.savefig(f'{image_base_path}/regr_correlation_matrix.png')  # Save the figure
+
+    # Figure 2: Scatter Plot of Head Length vs. Skull Width
+    plt.figure(figsize=(8, 6))
+    sns.scatterplot(x='skullw', y='hdlngth', data=df)
+    plt.title('Scatter Plot of Head Length vs. Skull Width')
+    plt.savefig(f'{image_base_path}/regr_hdlngth_vs_skullw.png')
+
+    # Figure 3: Box Plot of Head Length by Sex
+    plt.figure(figsize=(8, 6))
+    sns.boxplot(x='sex', y='hdlngth', data=df)
+    plt.title('Box Plot of Head Length by Sex')
+    plt.savefig(f'{image_base_path}/regr_sex_vs_hdlngth.png')
+
+    # Figure 4: Distribution Plot of Head Length
+    plt.figure(figsize=(8, 6))
+    sns.histplot(df['hdlngth'], bins=20, kde=True)
+    plt.title('Distribution of Head Length')
+    plt.savefig(f'{image_base_path}/regr_hdlngth_distribution.png')
+
+
 # Define a list of models to evaluate
 models = {
     'Linear Regression': LinearRegression(),
@@ -45,9 +73,6 @@ df_cleaned = df.dropna()
 # One-hot encode the 'Pop' column
 df_encoded = pd.get_dummies(df_cleaned, columns=['Pop', 'sex'], drop_first=True)
 
-# Display the first few rows of the encoded dataframe
-print(df_encoded.head())
-
 # Features and target variable
 X = df_encoded.drop(columns=['hdlngth', 'case'])
 y = df_encoded['hdlngth']
@@ -68,9 +93,6 @@ results = {}
 # Evaluate each model
 best_models = {}
 for name, model in models.items():
-    print(f"Training {name} model with the following features:")
-    print(X_train.columns.tolist())  # Print the feature columns
-
     if name in param_grids:
         # Use GridSearchCV for hyperparameter tuning
         grid_search = GridSearchCV(estimator=model, param_grid=param_grids[name], cv=5, n_jobs=-1, scoring='r2')
