@@ -5,6 +5,7 @@ from django.urls import path
 from machine_learning import views
 
 urlpatterns = [
+    path('', views.home, name='home'),
     path("admin/", admin.site.urls),
     path('classification/', views.classification, name='classification'),
     path('regression/', views.regression, name='regression'),

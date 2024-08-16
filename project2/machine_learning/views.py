@@ -10,6 +10,9 @@ from .classification import load_model, predict_single_point
 from .forms import PossumPredictionForm, SymptomForm
 
 
+def home(request):
+    return render(request, 'home.html')
+
 def classification(request):
     prediction = None
     confidence = None

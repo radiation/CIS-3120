@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Machine Learning Project</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="profile-container">
+        <h1>Bryan's Bio For CIS 3120</h1>
+        <div class="profile-image">
+            <img src="{% static '/profile.jpg' %}" alt="Profile Image">
+        </div>
+        <div class="profile-info">
+            <p><strong>Name:</strong> Bryan Choate</p>
+            <p><strong>Phone:</strong> (555) 123-4567</p>
+            <p><strong>Location:</strong> New York, NY</p>
+            <p>
+                <a href="https://www.linkedin.com/in/brchoate/" target="_blank">LinkedIn</a> | 
+                <a href="https://github.com/radiation" target="_blank">GitHub</a>
+            </p>
+        </div>
+        <div class="links">
+            <a href="{% url 'classification' %}" class="button-link">Monkeypox Classification</a>
+            <a href="{% url 'regression' %}" class="button-link">Possum Head Length Prediction</a>
+        </div>
+    </div>
+</body>
+</html>
