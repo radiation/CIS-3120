@@ -100,3 +100,6 @@ def main():
 
     # Optionally, save the DataFrame to a CSV file
     movie_df.to_csv("movie_data_boxofficemojo.csv", index=False)
+
+if __name__ == "__main__":
+    main()
