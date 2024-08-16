@@ -1,6 +1,7 @@
 import os
-import requests
+
 import pandas as pd
+import requests
 from bs4 import BeautifulSoup
 
 API_KEY = os.getenv('WEATHER_API_KEY')

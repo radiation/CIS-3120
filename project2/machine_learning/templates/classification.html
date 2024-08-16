@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monkeypox Prediction</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+        .result {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        form {
+            width: 100%;
+            display: block;
+        }
+
+        div {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Monkeypox Prediction</h1>
+
+    {% if prediction %}
+        <div class="result">
+            <h2>Prediction Result:</h2>
+            <p><strong>Prediction:</strong> {{ prediction }}</p>
+            <p><strong>Confidence:</strong> {{ confidence|floatformat:2 }}</p>
+            <p><strong>Model:</strong> {{ model_name }}</p>
+        </div>
+    {% endif %}
+
+    <form method="post">
+        {% csrf_token %}
+        <div>
+            <label for="id_systemic_illness">Systemic Illness:</label>
+            {{ form.systemic_illness }}
+        </div>
+        <div>
+            <label for="id_sore_throat">Sore Throat:</label>
+            {{ form.sore_throat }}
+        </div>
+        <div>
+            <label for="id_rectal_pain">Rectal Pain:</label>
+            {{ form.rectal_pain }}
+        </div>
+        <div>
+            <label for="id_penile_oedema">Penile Oedema:</label>
+            {{ form.penile_oedema }}
+        </div>
+        <div>
+            <label for="id_oral_lesions">Oral Lesions:</label>
+            {{ form.oral_lesions }}
+        </div>
+        <div>
+            <label for="id_solitary_lesion">Solitary Lesion:</label>
+            {{ form.solitary_lesion }}
+        </div>
+        <div>
+            <label for="id_swollen_tonsils">Swollen Tonsils:</label>
+            {{ form.swollen_tonsils }}
+        </div>
+        <div>
+            <label for="id_hiv_infection">HIV Infection:</label>
+            {{ form.hiv_infection }}
+        </div>
+        <div>
+            <label for="id_sexually_transmitted_infection">Sexually Transmitted Infection:</label>
+            {{ form.sexually_transmitted_infection }}
+        </div>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>

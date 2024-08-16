@@ -4,3 +4,8 @@ selenium
 black
 ruff
 isort
+seaborn
+matplotlib
+scikit-learn
+imblearn
+django

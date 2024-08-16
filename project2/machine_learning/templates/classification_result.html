@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Results</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="result-container">
+        <h2 class="result-header">Prediction Results</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Model</th>
+                    <th>Prediction</th>
+                    <th>Confidence</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for model, prediction_confidence in predictions.items %}
+                <tr>
+                    <td>{{ model }}</td>
+                    <td>
+                        {% if prediction_confidence.0 == 1.0 %}
+                            Positive
+                        {% elif prediction_confidence.0 == 0.0 %}
+                            Negative
+                        {% else %}
+                            {{ prediction_confidence.0 }}
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if prediction_confidence.1 %}
+                            {{ prediction_confidence.1|floatformat:2 }}
+                        {% else %}
+                            N/A
+                        {% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <a href="{% url 'classification' %}" class="predict-link">Make another prediction</a>
+    </div>
+</body>
+</html>

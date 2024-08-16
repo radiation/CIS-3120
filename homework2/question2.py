@@ -1,5 +1,7 @@
-import os, requests
+import os
+
 import pandas as pd
+import requests
 
 API_KEY = os.getenv('WEATHER_API_KEY')
 

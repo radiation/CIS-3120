@@ -1,11 +1,14 @@
-import requests, time
+import time
+
 import pandas as pd
+import requests
 from bs4 import BeautifulSoup
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
+
 
 # Convert a money string like '$28,767,189' to an integer 28767189
 def convert_money_to_int(money: str):

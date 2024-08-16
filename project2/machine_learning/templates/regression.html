@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Possum Head Length</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1>Predict Possum Head Length</h1>
+
+    <h2>Sample Data for Reference</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Site</th>
+                <th>Pop</th>
+                <th>Sex</th>
+                <th>Age</th>
+                <th>Head Length</th>
+                <th>Skull Width</th>
+                <th>Total Length</th>
+                <th>Tail Length</th>
+                <th>Foot Length</th>
+                <th>Ear Conch</th>
+                <th>Eye Width</th>
+                <th>Chest Width</th>
+                <th>Belly Width</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in sample_data %}
+            <tr>
+                <td>{{ row.site }}</td>
+                <td>{{ row.Pop }}</td>
+                <td>{{ row.sex }}</td>
+                <td>{{ row.age }}</td>
+                <td>{{ row.hdlngth }}</td>
+                <td>{{ row.skullw }}</td>
+                <td>{{ row.totlngth }}</td>
+                <td>{{ row.taill }}</td>
+                <td>{{ row.footlgth }}</td>
+                <td>{{ row.earconch }}</td>
+                <td>{{ row.eye }}</td>
+                <td>{{ row.chest }}</td>
+                <td>{{ row.belly }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    {% if predictions %}
+        <div class="result">
+            <h2>Prediction Results:</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Model</th>
+                        <th>Predicted Head Length (mm)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for model, prediction in predictions.items %}
+                        <tr>
+                            <td>{{ model|capfirst }}</td>
+                            <td>{{ prediction|floatformat:2 }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    {% endif %}
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>

@@ -1,6 +1,7 @@
-import requests
 import pandas as pd
+import requests
 from bs4 import BeautifulSoup
+
 
 # This function takes a DataFrame and a list of column names as input
 def print_stat_summary(df, stats):
