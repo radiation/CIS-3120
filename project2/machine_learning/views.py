@@ -15,6 +15,9 @@ def home(request):
 
 def classification(request):
     results = []
+    prediction = None
+    confidence = None
+    model_name = None
 
     if request.method == 'POST':
         form = SymptomForm(request.POST)
